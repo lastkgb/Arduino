@@ -36,8 +36,9 @@ public class MainActivity extends Activity {
 
         HashMap<String, UsbDevice> deviceList = manager.getDeviceList();
         Iterator<UsbDevice> deviceIterator = deviceList.values().iterator();
-        while(deviceIterator.hasNext()){
+        while (deviceIterator.hasNext()) {
             UsbDevice device = deviceIterator.next();
             devices.add(device);
+        }
     }
 }
